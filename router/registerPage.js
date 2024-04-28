@@ -5,7 +5,7 @@ const {join} = require('path')
 const User = require(join(__dirname, '..', 'model', 'userModel.js'))
 
 router.get('/', (req,res)=>{
-    res.render('site/error')
+    res.render('site/register')
 })
 
 router.get('/', (req,res)=>{
