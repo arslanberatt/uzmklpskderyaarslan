@@ -1,0 +1,85 @@
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(205, 205, 205);" id="mainNavbar">
+        <div class="container">
+            <a href="/" style="font-family: 'Times New Roman', Times, serif;" class="navbar-brand text uppercase" title="Klinik Psikolog Derya Arslan">Klinik Psikolog | Derya Arslan</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-label="Menüyü açma ve kapatma butonu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="myLabel" id="myNavbar">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="myLabel">Neler Var</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="kapat"></button>
+            </div>
+        
+            <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-lg-0 mb-2">
+                <li class="nav-item" data-bs-dismiss='offcanvas'><a href="/" class="nav-link btn-close-canvas">Anasayfa</a></li>
+                <li class="nav-item" data-bs-dismiss='offcanvas'><a href="/about" class="nav-link btn-close-canvas">Hakkımda</a></li>
+                <li class="nav-item" data-bs-dismiss='offcanvas'><a href="/blog" class="nav-link btn-close-canvas">Blog</a></li>
+                <li class="nav-item me-5" data-bs-dismiss='offcanvas'><a href="/video" class="nav-link btn-close-canvas">Videolar</a></li>
+                
+                <li class="nav-item dropdown" >
+                    <a class="nav-link d-none dropdown-toggle" id="nDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                    <ul class="dropdown-menu" id="MyDropdown" aria-labelledby="nDropdown">
+                        
+                    </ul>
+                </li>
+            </ul>
+            <form class="searchForm d-flex">
+                <input type="search" class="searchInput form-control me-2" placeholder="Arama yap" aria-label="arama metin kutusu">
+                <button data-bs-dismiss='offcanvas' class="btn btn-outline-secondary btn-close-canvas" type="button">Ara</button>
+            </form>
+            </div>
+        </div><!--offcanvas-->
+        </div>
+    </nav> <!--Navbar end-->
+    <header class="backImageVideo target ">
+        <div class="container">
+            <div class="backImageVideo-sub col-5 col-3-md offset-1 text-light">Herkesin terapiye ihtiyacı vardır...</div>
+            <br>
+            <button class="backImage-btn btn btn-danger btn-lg p-lg-3 mt-3 rounded-pill titillium-web-light text-uppercase offset-1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Randevu al</button>
+            <br>
+            <a class="backImage-btn btn btn-success btn-lg p-lg-3 mt-3 rounded-pill titillium-web-light text-uppercase offset-1" type="button" class="btn btn-primary" href="https://wa.me/+905416906290"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        </div><!--container end-->
+    </header><!--background end-->
+    <div class="container py-4">
+        <div style="display: grid; justify-items: center;">
+            <div class="aboutME target row pacifico-regular mb-3 ms-2" style="width: fit-content">Videolarım</div>
+        </div>
+        <div class="row">
+            {{#each allData2}}
+            <div class="col-md-4 my-3">
+                <div class="card" style="cursor: pointer; height: 330px;">
+                    
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="{{ifreamUrl}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body d-flex" onclick="openModal('{{ifreamUrl}}')">
+                        <h5 class="card-title text-primary">{{title}}</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div><!--videoContent end-->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoFrame" class="embed-responsive-item" allowfullscreen></iframe>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div><!--modal end-->
+{{>modal}}
+{{>footer}}
+{{>foot}}

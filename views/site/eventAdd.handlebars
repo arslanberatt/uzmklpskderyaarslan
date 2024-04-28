@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yönetici Paneli</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+                  <div class="tab-pane fade show active" id="add-event" role="tabpanel" aria-labelledby="add-event-tab">
+                    <form id="addForm3">
+                      <div class="form-group">
+                        <label for="eventPhoto">Fotoğraf</label>
+                        <input type="file" class="form-control-file" id="eventPhoto" name="eventPhoto">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Ekle</button>
+                      <a href="/" class="btn btn-success ms-4">Anasayfaya Git</a>
+                    </form>
+                  </div>
+              </div>
+    </div>
+  </div>
+  <script>
+    const addForm3 = document.getElementById('addForm3')
+
+    const clearMessageForLogin= () =>{
+      setTimeout(()=>{
+        
+      })
+    }
+    addForm3.addEventListener('submit', (e)=>{
+      e.preventDefault();
+            
+      const formData = new FormData(addForm3)
+      
+      fetch('/eventAdd', {
+        method:'post',
+        body: formData
+      }).then(response=>response.json())
+      .then((res)=>{
+        console.log(res)
+      })
+    })
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

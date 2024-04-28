@@ -1,0 +1,35 @@
+.accordion-toggle {
+    border-bottom: 1px solid #cccccc;
+    margin: 0;
+    padding: 0px 0;
+    position: relative;
+    font-size: 1.2rem;
+}
+.accordion-toggle2{
+    font-size: 0.8rem !important;
+}
+
+.accordion-toggle,
+.accordion-toggle2
+{
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+.accordion-toggle.active,
+.accordion-toggle2.active
+{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-duration: 0.8s;
+}
+
+@media(max-width:768.98px){
+    .accordion-toggle2{
+        font-size: 0.6rem !important;
+    }
+    .accordion-toggle {
+        font-size: 0.9rem;
+    }
+}

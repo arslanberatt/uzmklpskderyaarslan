@@ -1,0 +1,11 @@
+.experienceLis{
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+.experienceLis.active{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    transition-duration: 1s;
+}

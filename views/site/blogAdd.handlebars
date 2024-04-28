@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yönetici Paneli</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="tab-pane fade show active" id="add-blog" role="tabpanel" aria-labelledby="add-blog-tab">
+                <form id="addForm">
+                  <div class="form-group">
+                    <label for="blogTitle">Başlık</label>
+                    <input type="text" class="form-control" id="blogTitle" name="blogTitle" placeholder="Blog başlığını girin">
+                  </div>
+                  <div class="form-group">
+                    <label for="blogContent">İçerik</label>
+                    <textarea class="form-control" id="blogContent" name="blogContent" rows="5" placeholder="Blog içeriğini girin"></textarea>
+                  </div>
+                  <div class="form-group">
+                      <label for="file">Fotoğraf</label>
+                      <input name="file" type="file" class="form-control-file" id="file">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Ekle</button>
+                  <a href="/blog" class="btn btn-success ms-4">Bloglara git</a>
+                </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    const addForm = document.getElementById('addForm')
+
+    const clearMessageForLogin= () =>{
+      setTimeout(()=>{
+        
+      })
+    }
+    addForm.addEventListener('submit', (e)=>{
+      e.preventDefault();
+            
+      const formData = new FormData(addForm)
+      
+      fetch('/blogAdd', {
+        method:'post',
+        body: formData
+      }).then(response=>response.json())
+      .then((res)=>{
+        console.log(res)
+      })
+    })
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

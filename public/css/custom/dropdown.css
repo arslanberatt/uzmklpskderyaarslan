@@ -1,0 +1,27 @@
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+    margin-top: -1rem !important;
+    margin-left: -8px;
+    padding-top: 0.5rem;
+}
+.dropdown-item:hover{
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+}
+.dropdown-item:active{
+    background-color: rgb(205, 205, 205);
+}
+
+@media(min-width:992px){
+    .dropdown-menu.navbar-mobile{
+        background-color: rgb(205, 205, 205) ;
+        border-radius: 0%;
+        margin-top: 0.5rem !important;
+        padding-top: 0.5rem;
+    }
+    .dropdown-menu.navbar-mobile .dropdown-item:active{
+        background-color: white;
+    }
+}

@@ -1,0 +1,46 @@
+.card{
+    height: 480px; 
+    overflow: hidden;
+}
+
+.card-text{
+    max-height: 120px; 
+    overflow: hidden;
+}
+
+.card img{
+    height: 280px; 
+    overflow: hidden;
+}
+
+@media(max-width:991.98px){
+    .card-text{
+        max-height: 94px;
+    }
+}
+
+.card1,
+.card2,
+.card3,
+.buttonSee{
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+.card1.active,
+.card2.active,
+.card3.active,
+.buttonSee.active{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+}
+.card1.active{transition-duration: 0.6s;}
+.card2.active{transition-duration: 1s;}
+.card3.active{transition-duration: 1.4s;}
+
+/*.expanded{
+    width: 90% !important;
+    transition: all 1s;
+}
+

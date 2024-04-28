@@ -1,0 +1,102 @@
+.timeline{
+    position: relative;;
+    padding: 0;
+    list-style: none;
+}
+.timeline::before{
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 25px;
+    width: 2px;
+    margin-left: -1px;
+    content: "";
+    background-color: #dadde0;
+}
+.timeline>li{
+    margin-bottom: 50px;
+}
+.timeline>li:after,
+.timeline>li:before{
+    display: table;
+    content: "";
+}
+.timeline>li:after{
+    clear: both;
+}
+.timeline>li .t-panel{
+    padding:  0 20px 0 60px;
+    text-align: left;
+}
+.timeline>li .t-image{
+    position: absolute;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 4px solid #dadde0;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.timeline .t-heading h4{
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+.timeline .t-heading h5{
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
+
+@media(min-width:768.98px){
+    .timeline::before{
+        left:50%;
+    }
+    .timeline>li{
+        min-height: 50px;
+        margin-bottom: 50px;
+    }
+    .timeline>li .t-panel{
+        float: left;
+        width: 50%;
+        padding-left: 15px;
+        text-align: center;
+    }
+    .timeline>li .t-image{
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        margin-left: -40px;
+    }
+    .timeline>li.t-inverted>.t-panel{
+        float: right;
+        padding: 0px 10px 10px 42px;
+        text-align: left;
+    }
+    .timeline>li .t-panel .t-heading>h4{
+       font-size: 1rem;
+       width: 100%;
+    }
+    .timeline .t-heading h5{
+        font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width:768.98px){
+    .timeline>li .t-image{ 
+        width: 70px;
+        height: 70px;        
+    }
+    .timeline::before{
+        left: 35px;        
+    }
+    .timeline>li .t-panel{
+        padding:  0 20px 0 90px;
+        text-align: left;
+    }
+}

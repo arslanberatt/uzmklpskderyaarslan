@@ -1,0 +1,413 @@
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(205, 205, 205);" id="mainNavbar">
+        <div class="container">
+            <a href="/" style="font-family: 'Times New Roman', Times, serif;" class="navbar-brand text uppercase" title="Klinik Psikolog Derya Arslan">Klinik Psikolog | Derya Arslan</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-label="Menüyü açma ve kapatma butonu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="myLabel" id="myNavbar">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="myLabel">Neler Var</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="kapat"></button>
+            </div>
+        
+            <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-lg-0 mb-2">
+                <li class="nav-item" data-bs-dismiss='offcanvas'><a href="/" class="nav-link btn-close-canvas">Anasayfa</a></li>
+                <li class="nav-item" data-bs-dismiss='offcanvas'><a href="/about" class="nav-link btn-close-canvas">Hakkımda</a></li>
+                <li class="nav-item" data-bs-dismiss='offcanvas'><a href="/blog" class="nav-link btn-close-canvas">Blog</a></li>
+                <li class="nav-item me-5" data-bs-dismiss='offcanvas'><a href="/video" class="nav-link btn-close-canvas">Videolar</a></li>
+                <li class="nav-item dropdown" >
+                    <a href="#therapy" class="nav-link dropdown-toggle" id="nDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">İletişim & Randevu</a>
+                    <ul class="dropdown-menu" id="MyDropdown" aria-labelledby="nDropdown">  
+                        <li data-bs-dismiss='offcanvas'><a href="#contact" class="dropdown-item btn-close-canvas">İletişime Geç</a></li>
+                        <li data-bs-dismiss='offcanvas'><a href="#appointment" class="dropdown-item btn-close-canvas" data-bs-toggle="modal" data-bs-target="#exampleModal">Randevu Al</a></li>
+                        <li data-bs-dismiss='offcanvas'><a href="https://wa.me/+905416906290" class="dropdown-item btn-close-canvas">WhatsApp</a></li>
+                        <li data-bs-dismiss='offcanvas'><a href="#sosialMedia" class="dropdown-item btn-close-canvas">Sosyal Medya</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="searchForm d-flex" >
+                <input type="search" class="searchInput form-control me-2" placeholder="Arama yap" aria-label="arama metin kutusu">
+                <button data-bs-dismiss='offcanvas' class="btn btn-outline-secondary btn-close-canvas" type="button">Ara</button>
+            </form>
+            </div>
+        </div><!--offcanvas-->
+        </div>
+    </nav> <!--Navbar end-->
+    <header class="backImage target ">
+        <div class="container">
+            <div class="backImage-sub col-5 col-3-md offset-1 text-light">Herkesin terapiye ihtiyacı vardır...</div>
+            <br>
+            <button class="backImage-btn btn btn-danger btn-lg p-lg-3 mt-3 rounded-pill titillium-web-light text-uppercase offset-1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Randevu al</button>
+            <br>
+            <a class="backImage-btn btn btn-success btn-lg p-lg-3 mt-3 rounded-pill titillium-web-light text-uppercase offset-1" type="button" class="btn btn-primary" href="https://wa.me/+905416906290"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        </div><!--container end-->
+    </header><!-- backImage end -->
+    <section id="about" class="mySection container">
+        <h2 class="row pacifico-regular target mb-3 ms-2" style="width: fit-content">Hakkımda</h2> 
+        <div class="col">
+            <div class="container offset-xl-2 col-xl-8 offset-lg-1 col-lg-10 d-flex">
+                <img src="/img/cv.png" class="img-fluid aboutImage target" alt="aboutImage" style="height: 180px; width: 160px;" aria-hidden="true">
+                <p class="cv offset-1 mt-4 aboutcv target">Merhaba ben Derya Arslan, Uzman Klinik Psikolog, Co-Psikodramatist, Psikodiyet Psikoloğuyum. 
+                Psikodrama ve psikodinamik psikoterapiler perspektifinden eklektik bir çerçevede destek sağlamaktayım. 
+
+                Psikoterapi yaşamın temsilidir. Size temsillerin anlam arayışında eşlik ediyor olacağım.
+
+                Sevgilerimle  <a class="text-primary" style="text-decoration: none;" href="pages/about"> Devamını oku...</a></p>
+                
+            </div>
+        </div>
+        <br><br><br><br>
+    </section><!-- about end -->
+    <section class="MythirdSection bg-light container">
+        <div id="services" style="margin-top: -100px;"></div>
+        <br>
+        <div class="container">
+            <div class="text-start mb-5">
+                <h2 class="pacifico-regular target" style="width: fit-content;">Hizmetler</h2>
+            </div>
+            <div class="row row-cols-md-3 row-cols-2 row-cols-lg-6">
+                <div class="col d-flex justify-content-center">
+                    <img src="/img/anksiyete.png" class="target service1" height="28px" alt="hizmet">
+                    <p class="target service1"><b>Anksiyete</b></p>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="/img/iliskisorunlari.png" class="target service2" height="28px" alt="hizmet">
+                    <p class="target service2"><b>İlişki problemleri</b></p>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="/img/aileiciiletisim.png" class="target service3" height="28px" alt="hizmet">
+                    <p class="target service3"><b>Aile içi İletişim</b></p>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="/img/yemebozukluklari.png" class="target service4" height="28px" alt="hizmet">
+                    <p  class="target service4"><b>Yeme bozuklukları</b></p>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="/img/psikodrama.png" class="target service5" height="28px" alt="hizmet">
+                    <p class="target service5"><b>Psikodrama</b></p>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <img src="/img/uykuproblemi.png" class="target service6" height="28px" alt="hizmet">
+                    <p  class="target service6"><b>Uyku problemleri</b></p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-11 my-5 buttonSee target">
+                    <button type="button" class="btn btn-outline-primary end-0 float-end" data-bs-toggle="modal" data-bs-target="#myModal">Tümünü Gör</button>
+                </div>
+                <div id="myModal" class="modal fade" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Hizmetler</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body col" style="max-width: fit-content; display: ruby;">
+                                <p class="sevicesP">Depresyon</p>
+                                <p class="sevicesP">Motivasyon</p>
+                                <p class="sevicesP">Yeme bozukluğu</p>
+                                <p class="sevicesP">Anne, Baba ile Olan İlişki</p>
+                                <p class="sevicesP">Benlik Algısı</p>
+                                <p class="sevicesP">Eş, Partner İlişkisi</p>
+                                <p class="sevicesP">Gerçeklik Terapisi</p>
+                                <p class="sevicesP">Kendine Aşırı Eleştirel Yaklaşma</p>
+                                <p class="sevicesP">Kendine Güven Çalışmaları</p>
+                                <p class="sevicesP">Travma Tedavisi</p>
+                                <p class="sevicesP">Yeme Bozukluğu Tedavisi</p>
+                                <p class="sevicesP">Bilişsel Tedaviler</p>
+                                <p class="sevicesP">Otomatik Düşünceler</p>
+                                <p class="sevicesP">Somatizasyon Bozuklukları</p>
+                                <p class="sevicesP">Veda</p>
+                                <p class="sevicesP">Kaygı danışmanlığı</p>
+                                <p class="sevicesP">Yas danışmanlığı</p>
+                                <p class="sevicesP">Alkol bağımlılık tedavisi</p>
+                                <p class="sevicesP">Fobi</p>
+                                <p class="sevicesP">Alkol, Sigara, Madde Bağımlılığı</p>
+                                <p class="sevicesP">Bir Yakınının Kaybı</p>
+                                <p class="sevicesP">Duyguları İfade Etme</p>
+                                <p class="sevicesP">Eş, Partner İle Olan İlişki</p>
+                                <p class="sevicesP">Grup Rehberliği , Grup Danışması</p>
+                                <p class="sevicesP">Yalnızlık</p>
+                                <p class="sevicesP">Öz Güven, Öz Saygı</p>
+                                <p class="sevicesP">İntihar Düşünceleri</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- services end -->
+    <section id="activities" class="container experienceLis target">
+        
+            <div class="row" style="display:flex; justify-content: space-around;">
+                <div class="col-12 col-md-8 py-4 service1 target">
+    <h1 class="mb-4 pacifico-regular-sm target">Haftalık Çalışma Saatleri</h1>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Gün</th>
+                    <th>Başlangıç Saati</th>
+                    <th>Bitiş Saati</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pazartesi</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Salı</td>
+                    <td>12:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Çarşamba</td>
+                    <td>12:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Perşembe</td>
+                    <td>12:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Cuma</td>
+                    <td>12:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Cumartesi</td>
+                    <td>12:00</td>
+                    <td>20:00</td>
+                </tr>
+                </tbody>
+        </table>
+    </div>
+            </div>
+                <div class="col-md-3 col-12 py-3 service2 target">
+    <h1 class="mb-4 pacifico-regular-sm target">Yaklaşan Etkinlikler</h1>
+    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner p-1">
+            {{#each allData3}}
+            <div class="carousel-item active">
+                <img src="{{path2}}" height="300px" width="250px" class="d-block w-100">
+            </div>
+            {{/each}}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Önceki</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sonraki</span>
+        </button>
+    </div>
+            </div>
+            </div>
+    </section><!-- activities end -->
+    <section id="gallery" class="mySecondSection container" >
+        <div id="blog"></div>
+        <div class="row pacifico-regular target my-4 ms-1"  style="width: fit-content;">Blog</div> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card card1 target">
+                        <img src="/img/d.webp" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Yeme Bozukluğun Olabilir Mi?</h5>
+                        <p class="card-text">Merhaba! ✍️
+                                                       
+                            
+                            Yeme bozuklukları, kişinin yeme alışkanlıklarını olumsuz yönde etkileyen ciddi ve kronik sağlık sorunlarıdır. 
+                            
+                            Belirtiler:
+                            
+                            📌Aşırı kilo kaybı veya aşırı kilo alımı: Ani ve belirgin kilo değişiklikleri, yeme bozukluklarının bir göstergesi olabilir. Örneğin, anoreksiya nervoza (aşırı zayıflık), bulimia nervoza (düzensiz yeme ve ardından kusma) veya tıkınırcasına yeme bozukluğu (büyük miktarlarda hızlıca yeme) gibi bozukluklarda kilo değişimleri gözlenebilir.
+                            📌Kontrolsüz yeme veya yeme reddi: Yeme bozuklukları, bazı durumlarda aşırı yeme ataklarına (beyin tarafından kontrol edilmeyen aşırı miktarda yeme) veya yeme reddine yol açabilir. Birey, yemek yeme alışkanlıklarını kontrol etmekte zorluk çekebilir veya yemek yemeyi reddedebilir.
+                            📌Vücut algısı bozukluğu: Yeme bozuklukları olan kişiler, kendi vücutlarıyla ilgili gerçekçi olmayan bir algıya sahip olabilirler. Örneğin, anoreksiya nervoza olan bir kişi, aşırı zayıf olduğuna inanırken, vücutları normal veya hatta kilolu olabilir.
+                            📌Yemekle ilgili takıntılar veya kısıtlamalar: Yeme bozukluğu olan bireyler, yemekle ilgili takıntılı düşünceler veya davranışlar geliştirebilirler. Örneğin, yiyeceklerin kalorisini aşırı derecede takip etme, belirli yiyecekleri tamamen kısıtlama veya belirli bir düzen veya ritüele bağlı kalma gibi davranışlar sergileyebilirler.
+                            📌Psikolojik belirtiler: Yeme bozuklukları sıklıkla depresyon, anksiyete, düşük özsaygı, kendine zarar verme düşünceleri veya intihar düşünceleri gibi psikolojik belirtilerle ilişkilendirilir.
+                            
+                            Yeme bozukluklarının tanısı bir psikiyatr tarafından konulmalıdır. Tedavi için ruh sağlığı profesyonelleri kişinin semptomlarını değerlendirerek ve gerekirse uygun testler yaparak doğru ve uygun tedavi yöntemlerini belirleyebilir.
+                        </p>
+                        <a href="/blog"  class="cardLabel  btn btn-outline-success btn-sm">Blog Sayfamda Gör</a>
+                        <span class="position-absolute end-0 bottom-0 text-muted p-1" style="font-size: 0.6rem;">Uzm. Kl. Psk. Derya Arslan | 03 Temmuz 2023</span>
+                        
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card card2 target">
+                        <img src="/img/otekileştirme.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                        <h5 class="card-title">Ötekileştirme(k) Üzerine</h5>
+                        <p class="card-text">Merhaba! 🌺
+
+                            Bugün çok önemli bir konuyu üzerine düşünelim isterim. 
+                            Görülmemiş kimselerin bile isteye körleşmesi konusu kurcalıyor kafamı. Biraz bilgi biraz gözlem biraz deneyimlerimi harmanladım ve daha üzerine konuşacak çok şey var. 
+                            Her cümle birer soru işareti bıraksın kendinize ve çevrenize dair. Sevgilerimle.💕
+                            
+                            ✍️
+                            Toplumsal kalıp yargılar, kişisel travmalar, karşılanmamış duygusal ihtiyaçlar, ihmaller, istismarlar, kişisel önyargıları kaynaklı farklı olanı taşlama arzusuyla yanıp tutuşuluyor. 
+                            
+                            Kendine benzemeyene tahammülü olmayan; kendiliği kabul görmemiş, hakları savunulmamış, belki de zamanında görülmemiş, bireyselleşememiş ve artık birilerinin görülmesinden ödü patlayan kimselerle dolu çevremiz. 
+                            
+                            Bir başkasının farklılığı bu kimseler için kabul edilebilir değil çünkü edilirse bu kendi narsistik kırılmasını yaratacak, değersizlik duygusu derinlerden acı acı sızlatacak. 
+                            Bir başkasının görülüyor oluşu kendi görülmemişiliğini gün gibi hatırlatacak. 
+                            
+                            Tahammül edilemiyor seslere, hak savunmaya, renklere ve farklılıklara. 
+                            
+                            Belki de bu yüzden anlayamadılar ötekileştirilenleri, lubunyaları ve çocukları. 
+                            
+                            Görülmediler, ve artık görmek istemiyorlar.
+                            
+                            Fakat anlamak ve anlaşılmak kurtaracak bizleri. 
+                            İnsanların neden bazen farklılıkları göz ardı ettiğini veya başkalarını dışladığını anlamak, daha empatik ve hoşgörülü bir toplumun temelini atmamıza yardımcı olacak.
+                            
+                            Aşağıda üzerine düşünebileceğimiz bazı nedenlere bakalım:
+                            
+                            📌Bir zamanlar ötekileştirilmiş olmak, ötekileştirme hakkı ve gücünü haklı kılıyor hissi yaratıyor olabilir. 
+                            
+                            
+                            1️⃣ Korku ve Güvensizlik: Ötekileştirmenin temelinde korku ve güvensizlik duyguları yatabilir. Bilinmeyene, farklı olana karşı duyulan korku, insanları savunmacı bir tutuma itebilir. Güvensizlik hissi, kişilerin kendi gruplarına sıkı sıkıya bağlanmalarına ve dış gruplara karşı önyargılı davranmalarına neden olabilir.
+                            
+                            2️⃣ Grup Kimliği ve Bağlılık: İnsanlar genellikle aidiyet duygusuyla güçlü bir şekilde bağlandıkları gruplara yönelirler. Bu gruplar, kültürel, etnik, dini veya diğer benzerliklere dayanabilir. Grup kimliği, farklı grupları tehdit olarak algılamaya ve kendi grubunun üstünlüğünü korumaya yönelik bir zihinsel tutumu destekleyebilir.
+                            
+                            3️⃣ Stereotipler ve Önyargılar: Stereotipler, kişilerin belli gruplara yönelik genelleme yapmasına yol açabilir. Önyargılar ise bu stereotiplere dayalı olumsuz değerlendirmelerdir. Stereotiplere dayalı önyargılar, insanların farklı gruplara üye olan bireyleri daha negatif bir şekilde algılamasına ve onları dışlamasına neden olabilir.
+                            
+                            4️⃣ Kendini Üstün Görme: Kendini üstün görme, ötekileştirmenin bir başka psikolojik nedenidir. İnsanlar, kendilerini diğerlerinden üstün hissetmek isteyebilir ve bunu farklı grupları küçümseyerek veya hor görerek ifade edebilir. Bu, insanların kendi benlik saygılarını güçlendirmek için başkalarını aşağılamaya çalışmalarına yol açabilir.
+                            
+                            5️⃣ Empati Eksikliği: Empati, başkalarının duygularını ve perspektiflerini anlama yeteneğidir. Empati eksikliği, ötekileştirmenin temelinde yer alabilir. Başkalarının deneyimler ve bakış açılarını anlamak yerine, sadece kendi düşüncelerine odaklanmak ve başkalarının yaşadığı zorlukları görmezden gelmek, ötekileştirmenin temelinde yatan bir faktördür. Empati eksikliği, insanları farklı gruplara ait bireyleri anlamamalarına ve onların deneyimlerini değersizleştirmelerine neden olabilir.
+                            
+                            6️⃣ Kültürel ve Toplumsal Etkiler: Ötekileştirmenin psikolojik nedenleri sadece bireysel düzeyde değil, kültürel ve toplumsal düzeyde de şekillenebilir. Kültürel normlar, toplumsal yapının etkisi ve medya gibi faktörler, insanların farklı gruplara olan önyargılarını ve ötekileştirici tutumlarını şekillendirebilir. Toplumun içinde bulunduğu sosyal dinamikler, ötekileştirmenin yayılmasına katkıda bulunabilir.
+                            
+                            📌Bu nedenlerin farkında olmak, ötekileştirmenin kökenlerini anlamak için önemlidir. Ötekileştirme ile mücadele etmek, daha hoşgörülü, kapsayıcı ve adil bir toplum inşa etmek için önemli bir adımdır. Empatiyi geliştirmek, korku ve güvensizliği aşmak, stereotiplere meydan okumak ve kendi grup kimliğimizi daha esnek bir şekilde tanımlamak, ötekileştirmenin önüne geçmeye yardımcı olabilir.
+                            
+                            🤝 Hepimizin farklı olduğunu ve farklılıklarımızın bizi bir arada daha güçlü kıldığını unutmayalım. Saygı, anlayış ve hoşgörü temelinde bir arada yaşayarak, daha iyi bir dünya inşa edebiliriz. </p>
+                        <a href="/blog"  class="cardLabel  btn btn-outline-success btn-sm">Blog Sayfamda Gör</a>
+                        <span class="position-absolute end-0 bottom-0 text-muted p-1" style="font-size: 0.6rem;">Uzm. Kl. Psk. Derya Arslan | 03 Temmuz 2023</span>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 mb-4">
+                <div class="card card3 target">
+                    <img src="/img/travma.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Travmatik Olaylar Karşısında</h5>
+                        <p class="card-text">Travmatik bir durumda her birimizin verdiği tepkiler başka olabilir. Kimimiz donakalır, kimimiz kahramanca davranır, kimimiz çok öfkeli ve tepkisel olur kimimiz hiç bir şey olmamış gibi davranabiliriz.
+
+                            Yaşanılan zorlu bir durumla her birimiz kendi baş etme yöntemiyle hareket eder.
+                            
+                            Bazılarımız hızla çokça yardım ederken bazılarımız sırasını bekler. Her birimiz bilinçli veya bilinçdışı aldığımız/almak istediğimiz rolün gerekliliğini yaparız. Bu büyük grup içerisinde sorumluluğumuz olduğunu unutmayalım. Önce ilk yardımı gerçekleştireceğiz, temel ihtiyaçları karşılayacağız daha sonra her birimiz örgütlü bir biçimde elimizdeki en iyi yardımı sunacağız.
+                            
+                            Travma yaşayanlara bizzat destek olamıyorsak ikincil travma yaşayanlara destek olarak, toplumsal yaraları sarmak için belki sadece şefkatle duygulara eşlik ederek, çok büyük bir yardımda bulunabiliriz.</p><a href="/blog"  class="cardLabel  btn btn-outline-success btn-sm">Blog Sayfamda Gör</a>
+                        <span class="position-absolute end-0 bottom-0 text-muted p-1" style="font-size: 0.6rem;">Uzm. Kl. Psk. Derya Arslan | 20 Nisan 2023</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-11 mb-5 buttonSee target">
+                    <a href="/blog" type="button" class="btn btn-outline-primary end-0 float-end ">Blog Sayfamı Gör</a>
+                </div>
+            </div>
+      </div>
+    </section><!-- blog end -->
+    {{!-- <section id="contact" class="mySection experienceLis target">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="s-heading text-uppercase fw-bold text-white">İletişim</h2>
+                <h3 class="s-subheading text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita,
+                    provident.</h3>
+            </div>
+            <form class="needs-validation" action="/sendEmail" method="post" id="FrmContact" novalidate>
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-4">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Adınız" required
+                                maxlength="40" aria-describedby="ErrName">
+                            <label for="name">Adınız
+                                <span class="text-danger" aria-hidden="true">*</span>
+                                <span class="visually-hidden">zorunlu alan</span>
+                            </label>
+                            <div class="invalid-feedback fst-italic fs-6" id="ErrName"></div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Eposta" required
+                                maxlength="100" aria-describedby="ErrEmail">
+                            <label for="email">Eposta Adresiniz
+                                <span class="text-danger" aria-hidden="true">*</span>
+                                <span class="visually-hidden">zorunlu alan</span>
+                            </label>
+                            <div class="invalid-feedback fst-italic fs-6" id="ErrEmail"></div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Telefon Numaranız" required
+                                maxlength="15" aria-describedby="ErrPhone">
+                            <label for="phone">Telefon Numaranız
+                                <span class="text-danger" aria-hidden="true">*</span>
+                                <span class="visually-hidden">zorunlu alan</span>
+                            </label>
+                            <div class="invalid-feedback fst-italic fs-6" id="ErrPhone"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating form-textarea mb-md-0">
+                            <textarea id="message" name="message" class="form-control" placeholder="Mesajınız" required maxlength="450"
+                                aria-describedby="ErrMessage"></textarea>
+                            <label for="message">Mesajınız
+                                <span class="text-danger" aria-hidden="true">*</span>
+                                <span class="visually-hidden">zorunlu alan</span>
+                            </label>
+                            <div class="invalid-feedback fst-italic fs-6" id="ErrMessage"></div>
+                        </div>
+                        <div class="text-white text-end">
+                            <span id="current-character">0</span>
+                            <span> / 450</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-danger btn-lg text-uppercase py-3 d-block w-100"
+                        id="BtnContact">
+                        Mesaj Gönder
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section><!-- contact end --> --}}
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var nextButton = document.querySelector('.carousel-control-next');
+        
+        nextButton.addEventListener("click", function() {
+            // Aktif olan carousel-item'ı bul
+            var activeItem = document.querySelector('.carousel-item.active');
+            // Aktif olan carousel-item'dan active sınıfını kaldır
+            activeItem.classList.remove('active');
+            // Bir sonraki karousel öğesini bul ve active sınıfını ekle
+            var nextItem = activeItem.nextElementSibling;
+            if (nextItem) {
+                nextItem.classList.add('active');
+            } else {
+                // Son öğe ise ilk öğeye dön
+                document.querySelector('.carousel-item:first-child').classList.add('active');
+            }
+        });
+    });
+</script>
+
+{{>modal}}    
+{{>footer}}
+{{>foot}}

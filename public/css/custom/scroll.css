@@ -1,0 +1,101 @@
+.backImage,
+.backImageAbout,
+.backImageBlog,
+.backImageBlogPage,
+.backImageVideo{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateX(-15px) translateY(-15px);
+    transition-duration: 0.5s;
+}
+.backImage.active,
+.backImageAbout.active,
+.backImageBlog.active,
+.backImageBlogPage.active,
+.backImageVideo.active{
+    opacity: 1;
+    transform: translate(0px);
+}
+
+
+.backImage-sub,
+.backImage-btn
+{
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.5s;
+}
+.active .backImage-sub,
+.active .backImage-btn,
+.active .backImageAbout-sub
+
+{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+}
+.backImage.active .backImage-sub{
+    transition-duration: 0.5s;
+}
+.backImage.active .backImage-btn{
+    transition-duration: 1.2s;
+}
+
+.aboutImage,
+.aboutcv,
+.pacifico-regular,
+.aboutPageImage2,
+.service1,
+.service2,
+.service3,
+.service4,
+.service5,
+.service6,
+.groupWork,
+.selfWork
+{
+    opacity: 0;
+    transform: translateX(-15px) translateY(-5px);
+    transition: all 0.5s;
+}
+.aboutImage.active,
+.aboutcv.active,
+.pacifico-regular.active,
+.aboutPageImage2.active,
+.service1.active,
+.service2.active,
+.service3.active,
+.service4.active,
+.service5.active,
+.service6.active,
+.groupWork.active,
+.selfWork.active
+{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 0.5s;
+}
+.aboutImage.active,.pacifico-regular.active,.aboutPageImage2.active{
+    transition-duration: 0.7s;
+}
+.aboutcv.active{
+    transition-duration: 1.2s;
+}
+.service1.active{
+    transition-duration: 0.4s;
+}
+.service2.active{
+    transition-duration: 0.8s;
+}
+.service3.active{
+    transition-duration: 1.2s;
+}
+.service4.active{
+    transition-duration: 1.6s;
+}
+.service5.active{
+    transition-duration: 1.8s;
+}
+.service6.active{
+    transition-duration: 2s;
+}

@@ -1,0 +1,59 @@
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(205, 205, 205);" id="mainNavbar">
+        <div class="container">
+            <a href="/" style="font-family: 'Times New Roman', Times, serif;" class="navbar-brand text uppercase" title="Klinik Psikolog Derya Arslan">Klinik Psikolog | Derya Arslan</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-label="Menüyü açma ve kapatma butonu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="myLabel" id="myNavbar">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="myLabel">Neler Var</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="kapat"></button>
+            </div>
+        
+            <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-lg-0 mb-2">
+                <li class="nav-item" data-bs-dismiss='offcanvas'><a href="/index" class="nav-link btn-close-canvas">Anasayfa</a></li>
+                <li class="nav-item" data-bs-dismiss='offcanvas'><a href="/about" class="nav-link btn-close-canvas">Hakkımda</a></li>
+                <li class="nav-item" data-bs-dismiss='offcanvas'><a href="/blog" class="nav-link btn-close-canvas">Blog</a></li>
+                <li class="nav-item me-5" data-bs-dismiss='offcanvas'><a href="/video" class="nav-link btn-close-canvas">Videolar</a></li>
+                <li class="nav-item dropdown" >
+                    <a class="nav-link d-none dropdown-toggle" id="nDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                    <ul class="dropdown-menu" id="MyDropdown" aria-labelledby="nDropdown">
+                        
+                    </ul>
+                </li>
+            </ul>
+            
+            </div>
+        </div><!--offcanvas-->
+        </div>
+    </nav> <!--Navbar end-->
+    <section class="errorBackground" >
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center align-items-center text-center" style="height: 85vh;" >
+                            <div class="error-template">
+                                <h1>
+                                    Oops!</h1>
+                                <h2>
+                                    404 Not Found</h2>
+                                <div class="error-details">
+                                    Üzgünüm, Sayfa Bulunamadı!
+                                </div>
+                                <div class="error-actions">
+                                    <a href="/" class="btn btn-primary btn-lg my-3"><span class="glyphicon glyphicon-home"></span>
+                                        Beni Anasayfaya Gönder</a>
+                                </div>
+                            </div>      
+                        </div>
+                                      
+                    </div>
+                </div>
+            </div>
+    </section><!-- error -->
+{{>footer}}
+{{>foot}}
+
